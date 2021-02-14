@@ -38,4 +38,4 @@ jobs:
         app-name: 'webapp-teste-node'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_3ed4884590ca4546af7a0cedd596313b }}
-        package: front-end/dist/
+        package: dist/
