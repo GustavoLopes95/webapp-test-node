@@ -1,12 +1,10 @@
 # Docs for the Azure Web Apps Deploy action: https://github.com/Azure/webapps-deploy
 # More GitHub Actions for Azure: https://github.com/Azure/actions
 
-name: agendador-front-end-dev
+name: Build and deploy Node.js app to Azure Web App - webapp-teste-node
 
 on:
   push:
-    paths: 
-      - 'front-end/*'
     branches:
       - development
   workflow_dispatch:
@@ -38,4 +36,4 @@ jobs:
         app-name: 'webapp-teste-node'
         slot-name: 'production'
         publish-profile: ${{ secrets.AzureAppService_PublishProfile_3ed4884590ca4546af7a0cedd596313b }}
-        package: dist/
+        package: dist
